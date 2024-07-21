@@ -1,0 +1,18 @@
+GET http://localhost:3004
+
+### Create New USER
+POST http://localhost:3004/signup
+Content-Type: application/json
+
+{
+    "email": "rahmanasad222@gmail.com",
+    "password": "password",
+    
+}
+
+
+### POST SIGNIN REQUEST
+POST http://localhost:3004/signin
+
+### Update SONGS REQUEST
+DELETE http://localhost:3004/songs/1
