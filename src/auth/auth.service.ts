@@ -8,6 +8,7 @@ import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 export class AuthService {
   constructor(private prisma: PrismaService) {}
   async signup(dto: AuthDto) {
+    console.log('signup dto is: ', dto);
     try {
       const hash = await argon.hash(dto.password);
 
